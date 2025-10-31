@@ -22,7 +22,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* NOTE: Gradient uses non-standard colors which may not match theme. Keeping as is. */
-    background: linear-gradient(135deg, #35ef3e 15%, #ce1ff1, #4351ba);
+    background: linear-gradient(135deg, #3ae905 15%, #0914e2, #e304f3);
     min-height: 100vh;
     color: var(--text-primary);
     overflow-x: hidden;
@@ -136,7 +136,7 @@ h1 {
 
 .main-card {
     /* Keeping the custom radial gradient for consistency */
-    background: radial-gradient(#5fbce8,#0b669f,#000200);
+    background: radial-gradient(#4d73d5,#0ef3a2);
     backdrop-filter: blur(10px);
     border-radius: 24px;
     padding: 3rem;
@@ -195,7 +195,7 @@ h1 {
 
 .upload-area:hover {
     border-color: var(--primary);
-    background: rgba(3, 4, 71, 0.1);
+    background: rgba(17, 74, 88, 0.959);
     transform: translateY(-2px);
 }
 
@@ -265,7 +265,7 @@ label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: var(--text-secondary);
+    color: whitesmoke;
 }
 
 input[type="text"],
@@ -307,7 +307,7 @@ textarea {
 }
 
 .btn {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, #2003f8, #020811);
     color: white;
     padding: 1rem 2.5rem;
     border: none;
