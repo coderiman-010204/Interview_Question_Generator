@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview Prep - Smart Interview Questions Generator</title>
+    <link rel="stylesheet" href="interview_style.css">
+</head>
+
+<body>
+        <div class="bg-animation">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+
+        <div class="container">
+                <header>
+                        <h1> AI-Interview Question Generator</h1>
+                        <p class="subtitle">Upload your resume and get personalized interview questions</p>
+                    </header>
+
+                <div class="main-card">
+                        <div class="upload-section">
+                                <h2 class="section-title">Upload Your Resume</h2>
+                                <div class="upload-area" id="uploadArea">
+                                        <div class="upload-icon">📄</div>
+                                        <h3>Drop your resume here or click to browse</h3>
+                                        <p style="color: var(--text-secondary); margin-top: 0.5rem;">Supports PDF, DOC,
+                        DOCX (Max 5MB)</p>
+                                        <input type="file" id="fileInput" accept=".pdf,.doc,.docx" />
+                                    </div>
+                                <div class="file-info" id="fileInfo">
+                                        <strong>✓ File uploaded:</strong> <span id="fileName"></span>
+                                    </div>
+                            </div>
+
+                        <div class="input-group">
+                                <label for="position">Target Position</label>
+                                <input type="text" id="position" placeholder="e.g., Senior Frontend Developer" />
+                            </div>
+
+                        <div class="input-group">
+                                <label for="company">Company Name (Optional)</label>
+                                <input type="text" id="company" placeholder="e.g., Google, Amazon, Microsoft" />
+                            </div>
+
+                                    <div class="input-group">
+                                <label for="difficulty">Difficulty Level</label>
+                                <select id="difficulty">
+                                        <option value="all">All Levels</option>
+                                        <option value="easy">Easy</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="hard">Hard</option>
+                                    </select>
+                            </div>
+                         <div class="btn-container">
+                            <button class="btn" id="generateBtn">
+                                    <span>✨ Generate Questions</span>
+                                </button>
+                            </div>
+
+                        <div class="loading" id="loading">
+                                <div class="spinner"></div>
+                                <p>Analyzing your resume and generating personalized questions...</p>
+                            </div>
+
+                        <div class="results" id="results" style="display: none;">
+    <h2 class="section-title">Your Interview Questions</h2>
+
+    <!-- Questions will be appended here -->
+    <div id="questionsContainer"></div>
+
+    <!-- Generate More Button Section -->
+    <div id="generate-more-container" class="generate-more-container">
+        <button id="generateMoreBtn" class="btn" style="display: none;">
+            ➕ Generate More Questions
+        </button>
+    </div>
+</div>
+
+
+ </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+
+<script src="interview_script.js"></script>
+
+</html>
